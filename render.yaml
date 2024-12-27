@@ -1,0 +1,14 @@
+# Exported from Render on 2024-12-27T21:14:56Z
+services:
+- type: web
+  name: VJ-Txt-Leech-Bot
+  runtime: docker
+  repo: https://github.com/alexgurliya/VJ-Txt-Leech-Bot
+  plan: free
+  envVars:
+  - key: BOT_TOKEN
+    sync: false
+  region: oregon
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+version: "1"
